@@ -58,7 +58,6 @@ body {
   font-weight: 400;
   color: #ffffff;
   background-color: #1b1b1b;
-  padding: 0 4.8rem;
 }
 
 .container {
@@ -74,9 +73,10 @@ body {
 /******** HEADER **********/
 .header {
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
   height: 9.6rem;
+  padding: 20px;
 }
 
 /******* NAVIGATION *********/
@@ -190,7 +190,27 @@ body {
   justify-content: space-between;
   align-items: center;
   background-color: #FF9000;
-  padding: 20px;
+  padding: 40px;
   width: 100%;
   bottom: 0;
 }
+
+.left-link a {
+    text-decoration: none;
+    color: #1b1b1b;
+    margin-right: 50px;
+    font-size: 25px;
+    text-transform: uppercase;
+}
+
+.right-link a {
+    font-family: rakkas;
+    font-size: 80px;
+    text-decoration: none;
+    color: #1b1b1b;
+    margin-right: 100px;
+    text-transform: uppercase;
+
+
+}
+
