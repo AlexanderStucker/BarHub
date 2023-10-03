@@ -192,13 +192,12 @@ body {
   background-color: #FF9000;
   padding: 40px;
   width: 100%;
-  bottom: 0;
 }
 
 .left-link a {
     text-decoration: none;
     color: #1b1b1b;
-    margin-right: 50px;
+    margin-right: 20px;
     font-size: 25px;
     text-transform: uppercase;
 }
@@ -208,7 +207,7 @@ body {
     font-size: 80px;
     text-decoration: none;
     color: #1b1b1b;
-    margin-right: 100px;
+    margin-right: 50px;
     text-transform: uppercase;
 
 
