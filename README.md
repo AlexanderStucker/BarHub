@@ -2,6 +2,7 @@
 ## Requirements
 Run via docker:
 - docker
+
 Run via php cli:
 - php 8.1 -> [how to install](https://www.geeksforgeeks.org/how-to-install-php-in-windows-10/)
 - composer -> [download](https://getcomposer.org/download/)
