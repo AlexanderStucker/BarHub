@@ -31,3 +31,11 @@ docker compose up
 ```bash
 docker compose exec app php artisan db:seed
 ```
+
+## Troubleshooting
+- Check that `DB_USERNAME` and `DB_PASSWORD` are set. `DB_USERNAME` should not be set to `root`.
+- Stop the containers and delete the `mysql_data` folder
+```bash
+sudo rm -rf mysql_data
+```
+
