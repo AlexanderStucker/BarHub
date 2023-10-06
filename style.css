@@ -58,6 +58,14 @@ body {
   font-weight: 400;
   color: #ffffff;
   background-color: #1b1b1b;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main{
+  flex-grow:1;
+  margin: 0 80px;
 }
 
 .container {
@@ -159,11 +167,8 @@ body {
 
 /********** SECTION TEXT WITH PICTURES **************/
 
-.section-text-picture {
-  padding: 4rem 0;
-}
-
 .heading-text-box {
+  flex: 1;
   padding-left: 2rem;
   margin-bottom: 1.5rem;
   background-color: #FF9000;
@@ -172,9 +177,28 @@ body {
   text-transform: uppercase;
 }
 
-.img-box {
-  width: 100%;
+
+
+/*********************Über uns ********************/
+
+.container {
+   display: flex;
+  }
+
+.image-box {
+  flex: 1;
+  margin-bottom: 30px;
+  }
+
+.image{
+  max-width: 60%;
 }
+
+.text {
+  flex: 5;
+ }
+
+
 
 /********** FORMULAR **********/
 
