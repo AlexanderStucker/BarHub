@@ -1,0 +1,15 @@
+version: "3.8"
+
+services:
+    # TODO:
+    #app:
+    db:
+        image: mariadb # better mysql
+        restart: unless-stopped
+        ports:
+            - "3306:3306"
+        environment:
+            - MARIADB_DATABASE=${DB_DATABASE}
+            - MARIADB_USER=${DB_USERNAME}
+            - MARIADB_PASSWORD=${DB_PASSWORD}
+            - MARIADB_ALLOW_EMPTY_ROOT_PASSWORD=true
