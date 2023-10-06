@@ -4,7 +4,7 @@ services:
     app:
       image: bitnami/laravel
       working_dir: /barhub
-      entrypoint: php artisan serve --host 0.0.0.0
+      entrypoint: bash -c "composer update && php artisan serve --host 0.0.0.0"
       volumes:
           - ./:/barhub
       environment:
