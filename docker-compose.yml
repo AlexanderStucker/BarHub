@@ -1,0 +1,25 @@
+version: "3.8"
+
+services:
+    app:
+      image: bitnami/laravel
+      working_dir: /barhub
+      entrypoint: php artisan serve --host 0.0.0.0
+      volumes:
+          - ./:/barhub
+      environment:
+        - DB_HOST=db
+      ports:
+        - 8000:8000
+    db:
+        image: mariadb # better mysql
+        restart: unless-stopped
+        ports:
+            - "3306:3306"
+        environment:
+            - MARIADB_DATABASE=${DB_DATABASE}
+            - MARIADB_USER=${DB_USERNAME}
+            - MARIADB_PASSWORD=${DB_PASSWORD}
+            - MARIADB_ALLOW_EMPTY_ROOT_PASSWORD=true
+        volumes:
+          - ./mysql_data:/var/lib/mysql
