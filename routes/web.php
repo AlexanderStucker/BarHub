@@ -41,3 +41,7 @@ Route::get('impress', function () {
 Route::get('privacy', function () {
     return view('privacy');
 })->name('privacy');
+
+Route::get('location', function () {
+    return view('location');
+})->name('location');

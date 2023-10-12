@@ -9,7 +9,7 @@
           <li><a class="main-nav-link nav-logo" href="{{ route('home') }}">BarHub</a></li>
           <li><a class="main-nav-link {{ Route::currentRouteNamed('events') ? 'nav-current' : '' }}" href="{{ route('events') }}">Events</a></li>
           <li><a class="main-nav-link {{ Route::currentRouteNamed('team') ? 'nav-current' : '' }}" href="{{ route('team') }}">Unser Team</a></li>
-          <li><a class="main-nav-link {{ Route::currentRouteNamed('contact') ? 'nav-current' : '' }}" href="{{ route('contact') }}">Kontakt</a></li>
+          <li><a class="main-nav-link {{ Route::currentRouteNamed('contact') ? 'nav-current' : '' }}" href="{{ route('contact') }}">Reservation</a></li>
         </ul>
       </nav>
     </header>
