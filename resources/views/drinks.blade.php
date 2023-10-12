@@ -12,32 +12,28 @@
     <main>
       <section class="section-main-page">
         <div class="main-page">
-          <h1 class="heading-primary">Geträne</h1>
+          <h1 class="heading-primary">Getränke</h1>
 
           <p class="main-text">
-            Diverse Getränke blabla
-          </p>
+            Unser Getränke sortiment ist sehr vielfältig.</p>
         </div>
       </section>
-
       <section class="section-text-picture">
-        <div class="item-container">
-@foreach($drinks as $drink)
-          <div class="item-card">
-<div class="image-container">
-            <img
-            src="{{ $drink->imageurl }}"
-              class="img-box"
-              alt="guys sitting at a bar"
-            />
-          </div>
-          <div class="text-box">
-            <h2 class="heading-text-box">{{ $drink->name }}</h2>
-            <p class="small-text small-text-box">CHF {{ $drink->price }}</p>
-          </div>
+        <div class="container-nk">
+          @foreach($drinks as $drink)
+  <div class="card">
+    <div class="imgBx">
+      <img src="{{ $drink->imageurl }}">
+    </div>
+    <div class="contentBx">
+      
+      <a href="#">CHF {{ $drink->price }}</a>
+      <h2>{{ $drink->name }}</h2>
+    </div>
+  </div>
+  @endforeach
 </div>
-@endforeach
-        </div>
+</section>
       </section>
     </main>
     <x-footer></x-footer>

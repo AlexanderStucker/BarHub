@@ -21,23 +21,32 @@ Coole essen nice
       </section>
 
       <section class="section-text-picture">
-        <div class="item-container">
-@foreach($food as $meal)
-          <div class="item-card">
-<div class="image-container">
-            <img
-            src="{{ $meal->imageurl }}"
-              class="img-box"
-              alt="guys sitting at a bar"
-            />
+
+
+        <div class="ag-format-container">
+
+  <div class="ag-courses_box">
+  @foreach($food as $meal)
+<div class="ag-courses_item">
+  <img
+    src="{{ $meal->imageurl }}"
+    class="img-box"
+    alt="guys sitting at a bar"
+  />
+  <a href="#" class="ag-courses-item_link">
+    <div class="ag-courses-item_bg">
+    </div>
+    <div class="ag-courses-item_title">
+      {{ $meal->name }}
+    </div>
+    <p class="ag-courses-item_price">CHF {{ $meal->price }}</p>
+  </a>
 </div>
-          <div class="text-box">
-            <h2 class="heading-text-box">{{ $meal->name }}</h2>
-            <p class="small-text small-text-box">CHF {{ $meal->price }}</p>
-          </div>
-          </div>
-@endforeach
-        </div>
+  @endforeach
+</div>
+
+  </div>
+</div>
       </section>
     </main>
     <x-footer></x-footer>
