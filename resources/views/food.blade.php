@@ -15,7 +15,7 @@
           <h1 class="heading-primary">Speisekarte</h1>
 
           <p class="main-text">
-Coole essen nice
+Eine kulinarische Reise erwartet Sie
           </p>
         </div>
       </section>
