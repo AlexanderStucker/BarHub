@@ -158,7 +158,7 @@ main {
 }
 
 .small-text {
-  font-size: 1.5rem;
+  font-size: 30px;
   line-height: 1.05;
   margin-bottom: 1rem;
 }
@@ -992,7 +992,6 @@ h2.card__title {
   margin-bottom: 30px;
 }
 
-/**test**/
 .container-team {
   height: 100vh;
   width: 100vw;
@@ -1075,8 +1074,23 @@ h2.card__title {
   background-size: 600px;
 }
 
+.card4 {
+  background: url('https://images.unsplash.com/photo-1552058544-f2b08422138a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1899&q=80') center center no-repeat;
+  background-size: 300px;
+}
+
+.card4:hover {
+  background: url('https://images.unsplash.com/photo-1552058544-f2b08422138a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1899&q=80') left center no-repeat;
+  background-size: 600px;
+}
+
 .card2:hover h5,
 .card2:hover .fa {
+  opacity: 1;
+}
+
+.card4:hover h5,
+.card4:hover .fa {
   opacity: 1;
 }
 
@@ -1094,6 +1108,83 @@ h5 {
   transition: opacity 1s;
 }
 
+h3 {
+  text-align: center;
+  /* Zentriert den Text */
+  margin-top: 20px;
+  /* Fügt etwas Abstand oberhalb des h3 Tags hinzu */
+}
+
+.card-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+form {
+  margin: 50px auto;
+  width: 100%;
+}
+
+.feedback-input {
+  color: white;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  border-radius: 5px;
+  line-height: 22px;
+  background-color: transparent;
+  border: 2px solid #ff9000;
+  transition: all 0.3s;
+  padding: 13px;
+  margin-bottom: 15px;
+  width: 100%;
+  box-sizing: border-box;
+  outline: 0;
+}
+
+select option {
+  color: black;
+}
+
+.feedback-input:focus {
+  border: 2px solid #ff9000;
+}
+
+textarea {
+  height: 150px;
+  line-height: 150%;
+  resize: vertical;
+}
+
+[type="submit"] {
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+  width: 100%;
+  background: #ff9000;
+  border-radius: 5px;
+  border: 0;
+  cursor: pointer;
+  color: white;
+  font-size: 24px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  transition: all 0.3s;
+  margin-top: -4px;
+  font-weight: 700;
+}
+
+[type="submit"]:hover {
+  background: #ff9000;
+}
+
+h4 {
+  font-size: 30px;
+}
+
+h6 {
+  font-size: 20px;
+  color: #ff9000;
+}
 
 /********** SECTION TEXT WITH PICTURES **************/
 
@@ -1226,4 +1317,12 @@ iframe {
   grid-template-columns: repeat(2, 1fr);
   gap: 20px;
   padding: 10px;
+}
+
+.mail-link {
+  display: block;
+  list-style: none;
+  font-size: 30px;
+  margin-bottom: 2rem;
+  color: #ff9000;
 }

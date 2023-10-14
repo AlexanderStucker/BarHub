@@ -25,11 +25,11 @@ Route::get('food', [FoodController::class, 'index'])->name('food');
 
 Route::get('events', function () {
     return view('events');
-}) ->name('events');
+})->name('events');
 
 Route::get('team', function () {
     return view('team');
-}) ->name('team');
+})->name('team');
 
 Route::get('contact', [ContactController::class, 'index'])->name('contact');
 Route::post('contact', [ContactController::class, 'handleForm'])->name('handle-form');
@@ -45,3 +45,7 @@ Route::get('privacy', function () {
 Route::get('location', function () {
     return view('location');
 })->name('location');
+
+Route::get('found', function () {
+    return view('found');
+})->name('found');
