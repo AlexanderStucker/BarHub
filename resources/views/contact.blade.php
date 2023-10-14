@@ -54,10 +54,10 @@
         @foreach($reservations as $reservation)
         <div class="item-card">
           <div class="text-box">
-            <h4>Datum Ihrer der Reservation:</h4>
+            <h4>Datum Ihrer Reservation:</h4>
             <br>
             <h2 class="heading-text-box">{{ date('d.m.Y', strtotime($reservation->reservation_datetime)) }}</h2>
-            <h4>Uhrzeit Ihrer der Reservation:</h4>
+            <h4>Uhrzeit Ihrer Reservation:</h4>
             <h2 class="heading-text-box">{{ date('H:i', strtotime($reservation->reservation_datetime)) }}</h2>
           </div>
         </div>

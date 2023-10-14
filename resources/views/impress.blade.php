@@ -37,7 +37,7 @@
             Geschäftsführer:
           </h6>
           <p class="small-text">
-            May Mustermann
+            Roland Schelling
           </p>
 
           <h6 class="main-text">
