@@ -18,7 +18,7 @@
 
                 <p class="small-text">Wir übernehmen keine Haftung für Wertgegenstände!</p>
                 <p class="small-text">Bei Verlust der Garderobennummer, muss bis zum Ende des Abends gewartet werden. Für Verluste und nicht abgeholte Jacken oder Taschen bitte eine Email an</p>
-                <a href="maito:fundgrube@barhub.ch" class="mail-link">fundgrube@barhub.ch</a>
+                <a href="mailto:fundgrube@barhub.ch" class="mail-link">fundgrube@barhub.ch</a>
                 <p class="small-text">(Bitte Garderobennummer angeben, sofern diese noch vorhanden ist.) </p>
             </div>
         </section>
